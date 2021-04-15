@@ -1,4 +1,4 @@
-package application;
+package Quatro.codecademy.application;
 
 public class App {
 
