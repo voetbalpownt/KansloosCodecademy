@@ -8,7 +8,7 @@ public class StudentController extends Database {
         super(connectionUrl);
     }
 
-    // get all students
+    // Get all students from the database
     public ArrayList<String> getStudents() {
         ArrayList<String> results = new ArrayList<>();
         try {
@@ -25,7 +25,7 @@ public class StudentController extends Database {
         return results;
     }
 
-    // check for duplicate students 
+    // Check for duplicate students 
  
     public boolean checkDuplicate(String email) {
         try {
@@ -42,7 +42,7 @@ public class StudentController extends Database {
         return false;
     }
 
-    // get name from student by email
+    // Get the student name from their e-mail
     public String getName(String email) {
         try {
             connectDatabase();
@@ -58,7 +58,7 @@ public class StudentController extends Database {
         return "";
     }
 
-    // get any info (address, postalcode, etc.) by email
+    // Get any info (address, postalcode, etc.) by email
     public String getInfoByEmail(String email, String item) {
         try {
             connectDatabase();
@@ -75,7 +75,7 @@ public class StudentController extends Database {
         return "";
     }
 
-    // get all certificates  by selected email
+    // Get all certificates by given email
     public String getCertificatesByEmail(String email) {
         String results = "";
         try {
@@ -92,12 +92,12 @@ public class StudentController extends Database {
         return results;
     }
 
-    // add student 
+    // Add a student to the database 
     public void addStudent(String query) throws SQLException {
         statement.executeUpdate(query);
     }
 
-    // remove student
+    // Remove a student from the database
     public void removeStudent(String query) throws SQLException {
         statement.executeUpdate(query);
     }

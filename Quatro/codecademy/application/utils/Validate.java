@@ -34,7 +34,7 @@ public class Validate {
     public static String formatPostalCode(String postalCode) {
         // Throws NullPointerException when postalCode is empty
         if (postalCode.equals("")) {
-            throw new NullPointerException("PostalCode was empty");
+            throw new NullPointerException("Postal code was empty");
         }
         postalCode = postalCode.replace(" ", "").toUpperCase();
         Pattern pattern = Pattern.compile(regexPostalCode);
@@ -43,7 +43,7 @@ public class Validate {
             return new StringBuilder(postalCode).insert(4, " ").toString();
         }
         // Throws IllegalArgumentException when the given postalCode is invalid
-        throw new IllegalArgumentException("PostalCode was invalid: " + postalCode);
+        throw new IllegalArgumentException("Postal code was invalid: " + postalCode);
     }
 
     // Check the given URL to see if it is valid
