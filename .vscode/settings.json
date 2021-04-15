@@ -1,0 +1,42 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+
+        // Imports voor Thijs
+        "c:\\junit-platform-console-standalone-1.8.0-M1.jar",
+        "c:\\javafx-sdk-11.0.2\\lib\\javafx.base.jar",
+        "c:\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
+        "c:\\javafx-sdk-11.0.2\\lib\\javafx.fxml.jar",
+        "c:\\javafx-sdk-11.0.2\\lib\\javafx.graphics.jar",
+        "c:\\javafx-sdk-11.0.2\\lib\\javafx.media.jar",
+        "c:\\javafx-sdk-11.0.2\\lib\\javafx.swing.jar",
+        "c:\\javafx-sdk-11.0.2\\lib\\javafx.web.jar",
+        "c:\\javafx-sdk-11.0.2\\lib\\javafx-swt.jar",
+        "c:\\junit-platform-console-standalone-1.8.0-M1.jar",
+        "c:\\Users\\thijs\\Downloads\\sqljdbc_8.4.1.0_enu (1)\\sqljdbc_8.4\\enu\\mssql-jdbc-8.4.1.jre11.jar",
+
+        // Imports voor Ricardo
+        "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx.base.jar",
+        "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
+        "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx.fxml.jar",
+        "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx.graphics.jar",
+        "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx.media.jar",
+        "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx.swing.jar",
+        "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx.web.jar",
+        "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx-swt.jar",
+        "c:\\Users\\ricardo\\Downloads\\junit-platform-console-standalone-1.8.0-M1.jar",
+        "c:\\Users\\ricardo\\Desktop\\sqljdbc_8.4\\enu\\mssql-jdbc-8.4.1.jre11.jar",
+
+        // Imports voor Liam
+        "c:\\Users\\liamg\\Downloads\\sqljdbc_8.4\\enu\\mssql-jdbc-8.4.1.jre11.jar",
+        "c:\\Users\\liamg\\Downloads\\junit-platform-console-standalone-1.8.0-M1.jar",
+        "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx.base.jar",
+        "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
+        "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx.fxml.jar",
+        "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx.graphics.jar",
+        "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx.media.jar",
+        "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx.swing.jar",
+        "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx.web.jar",
+        "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx-swt.jar"
+    ]
+}
