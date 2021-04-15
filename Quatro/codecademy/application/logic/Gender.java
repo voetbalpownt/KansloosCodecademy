@@ -7,8 +7,8 @@ public enum Gender {
 
     private String genderName;
 
-    Gender(String displayName) {
-        this.genderName = displayName;
+    Gender(String genderName) {
+        this.genderName = genderName;
     }
 
     public String toString() {
