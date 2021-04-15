@@ -26,7 +26,6 @@ public class StudentController extends Database {
     }
 
     // Check for duplicate students 
- 
     public boolean checkDuplicate(String email) {
         try {
             connectDatabase();
