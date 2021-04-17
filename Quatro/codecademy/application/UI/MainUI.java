@@ -18,7 +18,7 @@ public class MainUI implements InterfaceUI {
     VBox vBox = new VBox();
     layout.setStyle("-fx-background-color: #C8F8FA;");
     layout.setMinSize(500, 300);
-    Text title = new Text("KansloosCodeCademy");
+    Text title = new Text("CC Statistics");
     Text subtitle = new Text("Home");
     vBox.getChildren().add(title);
     vBox.getChildren().add(subtitle);
