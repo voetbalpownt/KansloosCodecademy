@@ -2,7 +2,8 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
 
-        // Imports voor Thijs
+        // To make the GitHub collaberation easier we've added all of our imports to settings.json so we don't have to constantly import these again
+        // Imports for Thijs
         "c:\\javafx-sdk-11.0.2\\lib\\javafx.base.jar",
         "c:\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
         "c:\\javafx-sdk-11.0.2\\lib\\javafx.fxml.jar",
@@ -14,7 +15,7 @@
         "c:\\junit-platform-console-standalone-1.8.0-M1.jar",
         "c:\\Users\\thijs\\Downloads\\sqljdbc_8.4.1.0_enu (1)\\sqljdbc_8.4\\enu\\mssql-jdbc-8.4.1.jre11.jar",
 
-        // Imports voor Ricardo
+        // Imports for Ricardo
         "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx.base.jar",
         "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
         "c:\\Users\\ricardo\\Documents\\javafx-sdk-11.0.2\\lib\\javafx.fxml.jar",
@@ -26,7 +27,7 @@
         "c:\\Users\\ricardo\\Downloads\\junit-platform-console-standalone-1.8.0-M1.jar",
         "c:\\Users\\ricardo\\Desktop\\sqljdbc_8.4\\enu\\mssql-jdbc-8.4.1.jre11.jar",
 
-        // Imports voor Liam
+        // Imports for Liam
         "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx.base.jar",
         "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
         "c:\\Users\\liamg\\Downloads\\JFX\\javafx-sdk-11.0.2\\lib\\javafx.fxml.jar",
