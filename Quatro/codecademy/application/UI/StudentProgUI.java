@@ -17,6 +17,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 
+// Class for viewing a student's progression
 public class StudentProgUI implements InterfaceUI {
 
     // Connection to the database used in this class

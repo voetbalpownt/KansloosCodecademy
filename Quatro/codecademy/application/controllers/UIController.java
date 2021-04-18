@@ -4,6 +4,7 @@ import Quatro.codecademy.application.UI.*;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
+// Class for switching scenes in the UI
 public class UIController extends Application {
 
     private Stage stage = null;

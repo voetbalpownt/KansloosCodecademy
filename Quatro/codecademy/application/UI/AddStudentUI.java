@@ -19,6 +19,7 @@ import Quatro.codecademy.application.controllers.UIController;
 import Quatro.codecademy.application.entity.*;
 import Quatro.codecademy.application.logic.Gender;
 
+// Class for adding a new student
 public class AddStudentUI implements InterfaceUI {
 
     // Connection to the Database used for the class

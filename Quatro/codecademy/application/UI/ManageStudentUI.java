@@ -20,6 +20,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 
+// Class for managing student's progress in the UI
 public class ManageStudentUI implements InterfaceUI {
 
     // Connection to the database used for this class

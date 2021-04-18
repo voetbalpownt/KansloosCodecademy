@@ -16,6 +16,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 
+// Class for viewing the average progression of a course
 public class AvgProgUI implements InterfaceUI {
 
     // Connection to the required databases for this class

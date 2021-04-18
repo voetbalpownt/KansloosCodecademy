@@ -3,6 +3,7 @@ package Quatro.codecademy.application.utils;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+// Class to validate inputted values
 public class Validate {
 
     // Regex to give a base for a valid email

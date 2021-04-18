@@ -4,8 +4,10 @@ import java.text.DecimalFormat;
 
 import Quatro.codecademy.application.logic.Gender;
 
+// Class for everything related to the certificates
 public class CertificateController extends Database {
 
+    // ConnectionUrl from database.java is given
     public CertificateController(String connectionUrl) {
         super(connectionUrl);
     }

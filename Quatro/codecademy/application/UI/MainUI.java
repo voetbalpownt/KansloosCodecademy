@@ -10,6 +10,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
+// Class for the first page of the UI
 public class MainUI implements InterfaceUI {
 
  // Method which creates the first page of the UI

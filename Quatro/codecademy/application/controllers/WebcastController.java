@@ -2,8 +2,10 @@ package Quatro.codecademy.application.controllers;
 
 import java.util.ArrayList;
 
+// Class for everything related to the webcasts
 public class WebcastController extends Database {
     
+    // connectionUrl from database.java is given
     public WebcastController(String connectionUrl) {
         super(connectionUrl);
     }

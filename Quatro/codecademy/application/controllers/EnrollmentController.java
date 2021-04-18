@@ -3,8 +3,10 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+// Class for everything related to the enrollments
 public class EnrollmentController extends Database {
 
+    // ConnectionUrl from database.java is given
     public EnrollmentController(String connectionUrl) {
         super(connectionUrl);
     }

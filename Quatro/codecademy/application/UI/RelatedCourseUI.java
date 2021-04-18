@@ -15,6 +15,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 
+// Class for viewing related courses
 public class RelatedCourseUI implements InterfaceUI {
 
     // Connection to the required databases for this class

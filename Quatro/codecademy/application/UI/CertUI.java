@@ -11,6 +11,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
+// Class for everything UI related of the certificates
 public class CertUI implements InterfaceUI {
 
     // Connection to the required databases for this class

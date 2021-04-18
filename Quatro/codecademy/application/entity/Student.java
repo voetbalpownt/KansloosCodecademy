@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import Quatro.codecademy.application.utils.Validate;
 import Quatro.codecademy.application.controllers.StudentController;
 
+// Class for validating information given when adding a student
 public class Student {
 
     private static StudentController studentController = new StudentController(

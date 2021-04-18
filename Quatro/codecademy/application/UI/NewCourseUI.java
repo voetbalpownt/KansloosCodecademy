@@ -19,6 +19,7 @@ import Quatro.codecademy.application.controllers.ContentController;
 import Quatro.codecademy.application.controllers.CourseController;
 import Quatro.codecademy.application.controllers.UIController;
 
+// Class for adding a new course
 public class NewCourseUI implements InterfaceUI {
 
     // Connection to the required databases for this class

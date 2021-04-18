@@ -3,8 +3,10 @@ package Quatro.codecademy.application.controllers;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+// Class for everything related to the courses
 public class CourseController extends Database {
 
+    // ConnectionUrl from database.java is given
     public CourseController(String connectionUrl) {
         super(connectionUrl);
     }

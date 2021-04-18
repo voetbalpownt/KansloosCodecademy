@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import Quatro.codecademy.application.controllers.StudentController;
 import Quatro.codecademy.application.controllers.UIController;
 
+// Class for viewing a student
 public class ViewStudentUI implements InterfaceUI {
 
     // Connection to the database used for the class

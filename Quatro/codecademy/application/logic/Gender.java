@@ -1,5 +1,6 @@
 package Quatro.codecademy.application.logic;
 
+
 public enum Gender {
 
     // Enum for the gender of a student
@@ -7,10 +8,12 @@ public enum Gender {
 
     private String genderName;
 
+    // Constructor for Gender
     Gender(String genderName) {
         this.genderName = genderName;
     }
 
+    // For displaying the gender
     public String toString() {
         return this.genderName;
     }

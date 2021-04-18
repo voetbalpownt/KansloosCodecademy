@@ -1,12 +1,14 @@
 package Quatro.codecademy.application.controllers;
 import java.sql.*;
 
+// Class for establishing a connection to the database
 public abstract class Database {
     private String connectionUrl;
     protected Connection connection;
     protected Statement statement;
     protected ResultSet resultSet;
 
+    // Constructor for Database
     public Database(String connectionUrl) {
         this.connectionUrl = connectionUrl;
         this.connection = null;

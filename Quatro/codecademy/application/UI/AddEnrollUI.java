@@ -18,6 +18,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 
+// Class for adding a new enrollment to a student
 public class AddEnrollUI implements InterfaceUI {
 
     // Connection to the databases used for this class

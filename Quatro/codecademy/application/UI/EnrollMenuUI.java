@@ -10,6 +10,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
+// Class for everything UI related of the enrollments
 public class EnrollMenuUI implements InterfaceUI {
 
     // Method which creates a new UI for the main page of the enrollments
