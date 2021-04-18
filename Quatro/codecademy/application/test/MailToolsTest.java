@@ -13,6 +13,7 @@ class MailToolsTest {
 // * @ensures \result = false;
 // * }
 
+    // Test for checking that not having a @ in a email will result in false
     @Test
     public void testValidateEmailRequiresNoAtlanticEnsuresFalse(){
         // Example email without @
@@ -23,9 +24,9 @@ class MailToolsTest {
 
         // Assert
         assertEquals(false, result);
-
     }
 
+    // Test for checking if a double @ or . results in true/false
     @Test
     public void testValidateEmailRequiresMoreThanOneAtlanticOrDotEnsuresFalse(){
         // Example emails with multiple @ or .
