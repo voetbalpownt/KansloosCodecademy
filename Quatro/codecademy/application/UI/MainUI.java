@@ -18,13 +18,13 @@ public class MainUI implements InterfaceUI {
     VBox vBox = new VBox();
     layout.setStyle("-fx-background-color: #C8F8FA;");
     layout.setMinSize(500, 300);
-    Text title = new Text("CC Statistics");
+    Text title = new Text("KansloosCodecademy");
     Text subtitle = new Text("Home");
     vBox.getChildren().add(title);
     vBox.getChildren().add(subtitle);
     vBox.setAlignment(Pos.BASELINE_CENTER);
-    title.setFont(new Font(18));
-    subtitle.setFont(new Font(18));
+    title.setFont(new Font(16));
+    subtitle.setFont(new Font(16));
     Button student = new Button("Student");
     Button course = new Button("Course");
     Button enrollment = new Button("Enrollment");
@@ -39,7 +39,6 @@ public class MainUI implements InterfaceUI {
     certificate.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
 
     student.setOnAction((event) -> controller.switchUI("studentUI"));
-
 
 
     GridPane gridPane = new GridPane();

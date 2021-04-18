@@ -27,19 +27,22 @@ public class StudentMenUI implements InterfaceUI {
         vBox.setAlignment(Pos.BASELINE_CENTER);
         title.setFont(new Font(18));
         subtitle.setFont(new Font(18));
-        Button addStudent = new Button("Add new student");
-        Button viewStudent = new Button("View student");
-        Button manageStudentProgession = new Button("Manage student progression");
-        Button viewStudentProgression = new Button("View student progression");
-        addStudent.setMinWidth(200);
-        addStudent.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
-        viewStudent.setMinWidth(200);
-        viewStudent.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
-        manageStudentProgession.setMinWidth(200);
-        manageStudentProgession.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
-        viewStudentProgression.setMinWidth(200);
-        viewStudentProgression.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
-
+        Button studentAdd = new Button("Add new student");
+        Button studentView = new Button("View student");
+        Button manageStudentProgess = new Button("Manage student progression");
+        Button viewStudentProgress = new Button("View student progression");
+        studentAdd.setMinWidth(200);
+        studentAdd.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
+        studentView.setMinWidth(200);
+        studentView.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
+        manageStudentProgess.setMinWidth(200);
+        manageStudentProgess.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
+        viewStudentProgress.setMinWidth(200);
+        viewStudentProgress.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
+        studentAdd.setOnAction((event) -> controller.switchUI("addstudentUI"));
+        studentView.setOnAction((event) -> controller.switchUI("viewstudentUI"));
+        manageStudentProgess.setOnAction((event) -> controller.switchUI("managestudentUI"));
+        viewStudentProgress.setOnAction((event) -> controller.switchUI("viewstudentprogressionUI"));
         VBox bottom = new VBox();
         bottom.setAlignment(Pos.CENTER);
         Button back = new Button("Back to home");
@@ -49,8 +52,6 @@ public class StudentMenUI implements InterfaceUI {
         bottom.getChildren().add(back);
 
         GridPane gridPane = new GridPane();
-
-        gridPane.setPadding(new Insets(20, 20, 20, 20));
         bottom.setPadding(new Insets(0, 10, 10, 10));
         bottom.setSpacing(10);
 
@@ -59,10 +60,10 @@ public class StudentMenUI implements InterfaceUI {
 
         gridPane.setAlignment(Pos.CENTER);
 
-        gridPane.add(addStudent, 0, 1);
-        gridPane.add(viewStudent, 0, 2);
-        gridPane.add(manageStudentProgession, 0, 3);
-        gridPane.add(viewStudentProgression, 0, 4);
+        gridPane.add(studentAdd, 0, 1);
+        gridPane.add(studentView, 0, 2);
+        gridPane.add(manageStudentProgess, 0, 3);
+        gridPane.add(viewStudentProgress, 0, 4);
 
         layout.setTop(vBox);
         layout.setCenter(gridPane);
