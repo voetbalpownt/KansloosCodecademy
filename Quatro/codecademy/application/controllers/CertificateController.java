@@ -10,8 +10,8 @@ public class CertificateController extends Database {
         super(connectionUrl);
     }
 
-       // diffrence between completed courses and enrollments
-       public String getPercentage(Gender gender) {
+    // Method for seeing what percentage of a certain Gender receives a Certificate
+    public String getPercentage(Gender gender) {
         try {
             double count = 0.0;
             double countcompleted = 0.0;
@@ -22,8 +22,8 @@ public class CertificateController extends Database {
             if (resultSet.next()) {
                 countcompleted = resultSet.getInt("Count");
             }
-            SQL = "SELECT COUNT(EmailAddress) AS Count FROM Enrollment WHERE EmailAddress IN(SELECT EmailAddress FROM Student WHERE Gender = \'"
-                    + gender + "\')";
+            SQL = "SELECT COUNT(EmailAddress) AS Count FROM Enrollment WHERE EmailAddress IN(SELECT EmailAddress FROM Student WHERE Gender = \'" 
+                + gender + "\')";
             statement = connection.createStatement();
             resultSet = statement.executeQuery(SQL);
             if (resultSet.next()) {
@@ -41,7 +41,7 @@ public class CertificateController extends Database {
         return "0";
     }
 
-    // get top certificate by coursename
+    // Get the 3 top Certificates by CourseName
     public String getTop() {
         String top = "";
         try {
@@ -60,7 +60,7 @@ public class CertificateController extends Database {
         return top;
     }
 
-    // get count from certificate by coursename
+    // Get the count from Certificate by CourseName
     public Integer getCount(String courseName) {
         try {
             connectDatabase();
