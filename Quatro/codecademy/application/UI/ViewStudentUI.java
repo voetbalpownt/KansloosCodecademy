@@ -78,7 +78,7 @@ public class ViewStudentUI implements InterfaceUI {
         });
 
         back.setOnAction((event) -> controller.switchUI("studentUI"));
-        addCertificate.setOnAction((event) -> controller.switchUI("addcertificatemenu"));
+        addCertificate.setOnAction((event) -> controller.switchUI("addcertificateUI"));
 
         delete.setOnAction((event) -> {
             String selected = String.valueOf(studentComboBox.getSelectionModel().getSelectedItem());
