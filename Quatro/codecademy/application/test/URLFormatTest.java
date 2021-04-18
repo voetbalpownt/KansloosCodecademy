@@ -13,6 +13,7 @@ public class URLFormatTest {
 // * 1.CharCount(Part3)>= 1
 // * @ensures \result = true
 
+    // Test for checking if leaving uit the http will result in false
     @Test
     public void testvalidateURLrequiresNoHttpEnsuresFalse() {
         // Arrange URL
@@ -25,6 +26,7 @@ public class URLFormatTest {
         assertEquals(false, result);
     }
 
+    // Test for checking if a correct URL will result in true
     @Test
     public void testvalidateURLCorectURLEnsuresTrue() {
         // Arrange URL
@@ -37,8 +39,9 @@ public class URLFormatTest {
         assertEquals(true, result);
     }
 
+    // Test for checking if leaving out the .com will result in false
     @Test
-    public void testValidateURLRequiresToplvlDomainNameEnsuresTrue() {
+    public void testValidateURLRequiresToplvlDomainNameEnsuresFalse() {
         // Arrange URL
         String URL = "https://www.github";
 
@@ -49,6 +52,7 @@ public class URLFormatTest {
         assertEquals(false, result);
     }
 
+    // Test for checking if leaving out the domain name will result in false
     @Test
     public void testValidateURLNoDomainNameEnsuresFalse() {
         // Arrange URL
