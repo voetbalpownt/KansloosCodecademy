@@ -32,6 +32,8 @@ public class UIController extends Application {
             case "addstudentUI":
                 stage.setScene((new AddStudentUI().getUI(this)));
                 break;
+            case "viewstudentUI":
+                stage.setScene((new ViewStudentUI().getUI(this)));
             default:
                 break;
         }
