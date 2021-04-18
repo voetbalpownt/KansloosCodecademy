@@ -36,10 +36,10 @@ public class CourseUI implements InterfaceUI {
         subtitle.setFont(new Font(18));
         Button courseNew = new Button("New Course");
         courseNew.setFont(new Font(11));
-        Button courseEdit = new Button("Add new content to an existing course");
-        courseEdit.setFont(new Font(11));
         courseNew.setMinWidth(200);
         courseNew.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
+        Button courseEdit = new Button("Add new content to an existing course");
+        courseEdit.setFont(new Font(11));
         courseEdit.setMinWidth(200);
         courseEdit.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
         Button courseRelated = new Button("View related courses");
@@ -50,7 +50,7 @@ public class CourseUI implements InterfaceUI {
         avgProgress.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
 
         courseNew.setOnAction((event) -> controller.switchUI("newcourseUI"));
-        courseEdit.setOnAction((event) -> controller.switchUI("addcontenttocourse"));
+        courseEdit.setOnAction((event) -> controller.switchUI("addcontenttocourseUI"));
         courseRelated.setOnAction((event) -> controller.switchUI("relatedcourseUI"));
         avgProgress.setOnAction((event) -> controller.switchUI("avgprogUI"));
 

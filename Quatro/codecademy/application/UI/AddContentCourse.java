@@ -72,7 +72,8 @@ public class AddContentCourse implements InterfaceUI {
                     contentController.editModule(selectedContent, selectedCourse);
                 } catch (SQLException e) {
                     e.printStackTrace();
-                }
+                } 
+                output.setText("Content has been added to course");
             } else {
                 output.setText("Please select a course and content");
             }

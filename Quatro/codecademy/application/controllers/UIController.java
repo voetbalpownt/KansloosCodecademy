@@ -45,8 +45,8 @@ public class UIController extends Application {
             case "courseUI":
                 stage.setScene((new CourseUI().getUI(this)));
                 break;
-            case "newcourseUI":
-                stage.setScene((new CourseUI().getUI(this)));
+                case "newcourseUI":
+                stage.setScene((new NewCourseUI().getUI(this)));
                 break;
             case "addcontenttocourseUI":
                 stage.setScene((new AddContentCourse().getUI(this)));
