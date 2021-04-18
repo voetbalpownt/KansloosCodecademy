@@ -41,6 +41,8 @@ public class MainUI implements InterfaceUI {
     student.setOnAction((event) -> controller.switchUI("studentUI"));
     course.setOnAction((event) -> controller.switchUI("courseUI"));
     enrollment.setOnAction((event) -> controller.switchUI("enrollmentUI"));
+    certificate.setOnAction((event) -> controller.switchUI("certificateUI"));
+
 
     GridPane gridPane = new GridPane();
 

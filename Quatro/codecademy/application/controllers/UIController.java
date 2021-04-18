@@ -61,6 +61,16 @@ public class UIController extends Application {
             case "enrollmentUI":
                 stage.setScene((new AddEnrollUI().getUI(this)));
                 break;
+            case "addenrollUI":
+                stage.setScene((new AddEnrollUI().getUI(this)));
+                break;
+            // UI dealing with certificates
+            case "certificateUI":
+                stage.setScene((new CertUI().getUI(this)));
+                break;
+            case "addcertificateUI":
+                stage.setScene((new AddCertUI().getUI(this)));
+                break;
             default:
                 break;
         }
