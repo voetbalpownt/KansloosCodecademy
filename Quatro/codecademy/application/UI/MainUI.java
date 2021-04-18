@@ -38,6 +38,10 @@ public class MainUI implements InterfaceUI {
     certificate.setMinWidth(200);
     certificate.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
 
+    student.setOnAction((event) -> controller.switchUI("studentUI"));
+
+
+
     GridPane gridPane = new GridPane();
 
     gridPane.setVgap(10);

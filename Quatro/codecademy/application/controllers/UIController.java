@@ -19,4 +19,20 @@ public class UIController extends Application {
         stage.show();
     }
 
+    // Method that is used to switch between the different UI's
+    public void switchUI(String scene) {
+        switch (scene) {
+            case "main":
+                stage.setScene((new MainUI().getUI(this)));
+                break;
+           
+            // UI's related to the student
+            case "studentUI":
+                stage.setScene((new StudentMenUI().getUI(this)));
+                break;
+            default:
+                break;
+        }
+    }
+
 }
