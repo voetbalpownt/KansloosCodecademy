@@ -59,7 +59,7 @@ public class UIController extends Application {
                 break;
             //UI dealing with enrollment
             case "enrollmentUI":
-                stage.setScene((new AddEnrollUI().getUI(this)));
+                stage.setScene((new EnrollMenuUI().getUI(this)));
                 break;
             case "addenrollUI":
                 stage.setScene((new AddEnrollUI().getUI(this)));

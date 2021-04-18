@@ -21,11 +21,11 @@ import Quatro.codecademy.application.logic.Gender;
 
 public class AddStudentUI implements InterfaceUI {
 
-    // connection to the Database used for the class
+    // Connection to the Database used for the class
     private CertificateController certificateController = new CertificateController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
 
-    // method which creates a new UI
+    // Method which creates a new UI for adding a student to the database
     public Scene getUI(UIController controller) {
         BorderPane layout = new BorderPane();
         layout.setMinSize(500, 300);

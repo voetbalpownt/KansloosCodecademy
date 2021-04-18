@@ -19,7 +19,7 @@ import javafx.scene.text.Text;
 
 public class StudentProgUI implements InterfaceUI {
 
-    // connection to the database used in this class
+    // Connection to the database used in this class
     private StudentController studentController = new StudentController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
     private EnrollmentController enrollmentController = new EnrollmentController(
@@ -27,7 +27,7 @@ public class StudentProgUI implements InterfaceUI {
     private CourseController courseController = new CourseController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
 
-    // method which creates a new UI
+    // Method which creates a new UI for viewing a student's progress
     public Scene getUI(UIController controller) {
         BorderPane layout = new BorderPane();
         layout.setMinSize(500, 300);

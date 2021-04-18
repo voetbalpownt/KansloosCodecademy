@@ -5,5 +5,6 @@ import Quatro.codecademy.application.controllers.UIController;
 
 public interface InterfaceUI {
     
+    // This is used in all other UI classes
     public Scene getUI(UIController uicontroller);
 }

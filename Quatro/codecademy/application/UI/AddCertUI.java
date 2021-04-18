@@ -22,7 +22,7 @@ import javafx.scene.text.Text;
 
 public class AddCertUI implements InterfaceUI {
 
-    // connection to the required databases for this class
+    // Connection to the required databases for this class
     private StudentController studentController = new StudentController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
     private EnrollmentController enrollmentController = new EnrollmentController(
@@ -30,7 +30,7 @@ public class AddCertUI implements InterfaceUI {
     private CertificateController certificateController = new CertificateController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
 
-    // method which creates a new UI
+    // Method which creates a new UI for adding a certificate
     public Scene getUI(UIController controller) {
         BorderPane layout = new BorderPane();
         layout.setMinSize(500, 300);

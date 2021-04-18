@@ -10,9 +10,9 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 
-public class EnrollMenUI implements InterfaceUI {
+public class EnrollMenuUI implements InterfaceUI {
 
-    // method which creates a new UI
+    // Method which creates a new UI for the main page of the enrollments
     public Scene getUI(UIController controller) {
         BorderPane layout = new BorderPane();
         VBox vBox = new VBox();

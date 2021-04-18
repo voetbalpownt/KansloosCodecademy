@@ -18,11 +18,11 @@ import javafx.scene.text.Text;
 
 public class AvgProgUI implements InterfaceUI {
 
-    // connection to the required databases for this class
+    // Connection to the required databases for this class
     private CourseController courseController = new CourseController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
 
-    // method which creates a new UI
+    // Method which creates a new UI to view the average progression of a course
     public Scene getUI(UIController controller) {
         BorderPane layout = new BorderPane();
         layout.setMinSize(500, 300);

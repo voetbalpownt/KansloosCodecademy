@@ -13,11 +13,11 @@ import javafx.scene.text.Text;
 
 public class CertUI implements InterfaceUI {
 
-    // connection to the required databases for this class
+    // Connection to the required databases for this class
     private CertificateController certificateController = new CertificateController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
 
-    // method which creates a new UI
+    // Method which creates a new UI for the main page of the certificates
     public Scene getUI(UIController controller) {
         BorderPane layout = new BorderPane();
         VBox vBox = new VBox();

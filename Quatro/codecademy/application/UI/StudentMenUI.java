@@ -14,7 +14,7 @@ import javafx.scene.text.Text;
 
 public class StudentMenUI implements InterfaceUI {
 
-    // method which creates a new UI
+    // Method which creates a new UI for the main page of the students
     public Scene getUI(UIController controller){
         BorderPane layout = new BorderPane();
         VBox vBox = new VBox();

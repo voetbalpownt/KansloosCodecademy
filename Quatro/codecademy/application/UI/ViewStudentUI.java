@@ -20,11 +20,11 @@ import Quatro.codecademy.application.controllers.UIController;
 
 public class ViewStudentUI implements InterfaceUI {
 
-    // connection to the database used for the class
+    // Connection to the database used for the class
     private StudentController studentController = new StudentController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
 
-    // method which creates a new UI
+    // Method which creates a new UI to view a student
     public Scene getUI(UIController controller) {
         BorderPane layout = new BorderPane();
         layout.setMinSize(500, 300);

@@ -12,7 +12,7 @@ import javafx.scene.text.Text;
 
 public class MainUI implements InterfaceUI {
 
- // method which creates a new UI
+ // Method which creates the first page of the UI
  public Scene getUI(UIController controller) {
     BorderPane layout = new BorderPane();
     VBox vBox = new VBox();

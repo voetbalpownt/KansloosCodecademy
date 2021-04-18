@@ -19,13 +19,13 @@ import javafx.scene.text.Text;
 
 public class AddContentCourse implements InterfaceUI {
 
-    // connection to the required databases for this class
+    // Connection to the required databases for this class
     private CourseController courseController = new CourseController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
     private ContentController contentController = new ContentController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
 
-    // method which creates a new UI
+    // Method which creates a new UI for adding content to a course
     public Scene getUI(UIController controller) {
         BorderPane layout = new BorderPane();
         layout.setMinSize(500, 300);

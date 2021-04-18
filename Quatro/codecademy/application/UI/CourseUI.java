@@ -17,11 +17,11 @@ import javafx.scene.text.Text;
 
 public class CourseUI implements InterfaceUI {
 
-    // connection to the required databases for this class
+    // Connection to the required databases for this class
     private WebcastController webcastController = new WebcastController(
             "jdbc:sqlserver://localhost;databaseName=Codecademy;integratedSecurity=true;");
 
-    // method which creates a new UI
+    // Method which creates a new UI for the main page of the courses
     public Scene getUI(UIController controller) {
         BorderPane layout = new BorderPane();
         VBox vBox = new VBox();
