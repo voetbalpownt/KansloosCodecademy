@@ -39,7 +39,7 @@ public class MainUI implements InterfaceUI {
     certificate.setStyle("-fx-background-color: #000000; -fx-text-fill: #00FFEE;");
 
     student.setOnAction((event) -> controller.switchUI("studentUI"));
-
+    course.setOnAction((event) -> controller.switchUI("courseUI"));
 
     GridPane gridPane = new GridPane();
 

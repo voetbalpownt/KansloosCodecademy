@@ -25,7 +25,7 @@ public class UIController extends Application {
             case "main":
                 stage.setScene((new MainUI().getUI(this)));
                 break;
-            // UI's related to the student
+            // UI's for the student classes
             case "studentUI":
                 stage.setScene((new StudentMenUI().getUI(this)));
                 break;
@@ -40,6 +40,11 @@ public class UIController extends Application {
                 break;
             case "viewstudentprogressionUI":
                 stage.setScene((new StudentProgUI().getUI(this)));
+                break;
+            // UI's for the Course classes
+            case "courseUI":
+                stage.setScene((new CourseUI().getUI(this)));
+                break;
             default:
                 break;
         }
