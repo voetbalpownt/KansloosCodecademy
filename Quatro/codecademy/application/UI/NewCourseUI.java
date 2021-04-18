@@ -76,10 +76,10 @@ public class NewCourseUI implements InterfaceUI {
                         courseController.addCourse(fieldCourseName.getText(), fieldSubject.getText(), selectedDifficulty,
                                 fieldIntroduction.getText());
                         contentController.editModule(selectedModule, fieldCourseName.getText());
+                        output.setText("Succesfully added a new course");
                     } catch (SQLException e) {
                         e.printStackTrace();
                     }
-                    output.setText("Succesfully added a new course");
                 }
             }
         });
