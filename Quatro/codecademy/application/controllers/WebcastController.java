@@ -3,10 +3,12 @@ package Quatro.codecademy.application.controllers;
 import java.util.ArrayList;
 
 public class WebcastController extends Database {
+    
     public WebcastController(String connectionUrl) {
         super(connectionUrl);
     }
 
+    // Get the top 3 Webcasts by ViewCount
     public ArrayList<String> getViewCount() {
         ArrayList<String> results = new ArrayList<>();
         try {

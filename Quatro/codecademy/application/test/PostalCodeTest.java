@@ -13,23 +13,21 @@ class PostalCodeTest {
 // * @signals (NullPointerException) postalCode == null;
 // * }
 
-// This test case will "fail" but this is because the Validate.java class throws a NullPointerException which is the expected result
-@Test
+    // This test case will "fail" but this is because the Validate.java class throws a NullPointerException which is the expected result
+    @Test
     public void testFormatPostalCodeRequiresPostalCodeNullSignalsNullPointerException() {
-    Assertions.assertThrows(NullPointerException.class, ()->{
-        throw new NullPointerException();
+        Assertions.assertThrows(NullPointerException.class, ()->{
+            throw new NullPointerException();
+        });
 
-    });
+        // Arrange postalCode to empty
+        String postalCode = "";
 
-    // Arrange postalCode to empty
-    String postalCode = "";
+        // Validate example postalCode
+        String result = Validate.formatPostalCode(postalCode); // Should be false
 
-    // Validate example postalCode
-    String result = Validate.formatPostalCode(postalCode); // Should be false
-
-    System.out.println(result);
-
-}
+        System.out.println(result);
+    }
 
 // * @subcontract valid postalCode {
 // * @requires Integer.valueOf(postalCode.trim ().substring(0, 4)) > 999 &&
@@ -41,16 +39,16 @@ class PostalCodeTest {
 // * postalCode.trim().substring(4).trim().toUpperCase()
 // * }
 
-// This test case will "fail" but this is because the Validate.java class throws an IllegalArgumentException which is the expected result
+    // This test case will "fail" but this is because the Validate.java class throws an IllegalArgumentException which is the expected result
     @Test
     public void testFormatPostalCodeRequiresValidPostalCodeEnsuresFormattedPostalCode(){
-    // Arrange postalCode
-    String postalCode = "4834ps";
+        // Arrange postalCode
+        String postalCode = "4834ps";
 
-    // Validate example postalCode
-    String result = Validate.formatPostalCode(postalCode); // Should be false
+        // Validate example postalCode
+        String result = Validate.formatPostalCode(postalCode); // Should be false
 
-    System.out.println(result);
+        System.out.println(result);
     }
 
 // * @subcontract invalid postalCode {
@@ -58,7 +56,7 @@ class PostalCodeTest {
 // * @signals (IllegalArgumentException);
 // * }
 
-// This test case will "fail" but this is because the Validate.java class throws an IllegalArgumentException which is the expected result
+    // This test case will "fail" but this is because the Validate.java class throws an IllegalArgumentException which is the expected result
     @Test
     public void testFormatPostalCodeRequiresInvalidPostalCodeSignalsIllegalArgumentException(){
         Assertions.assertThrows(IllegalArgumentException.class, ()->{

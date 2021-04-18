@@ -9,7 +9,7 @@ public class ContentController extends Database {
         super(connectionUrl);
     }
 
-    //get all modules
+    // Get all Modules from the database where the ContentItemId and CourseName is NULL
     public ArrayList<String> getAvailableModules() {
         ArrayList<String> results = new ArrayList<>();
         try {
@@ -26,16 +26,14 @@ public class ContentController extends Database {
         return results;
     }
 
+  // Update a Module by CourseName
+    public void editModule(String module, String courseName) throws SQLException {
+        String query = "UPDATE Module SET CourseName = \'" + courseName + "\' WHERE Title = \'" + module + "\'";
+        statement.executeUpdate(query);
+    }
 
 
-  //update a module by coursename
-  public void editModule(String module, String courseName) throws SQLException {
-    String query = "UPDATE Module SET CourseName = \'" + courseName + "\' WHERE Title = \'" + module + "\'";
-    statement.executeUpdate(query);
-}
-
-
-    //get all content
+    // Get all content where the ContenItemId and CourseName is NULL
     public ArrayList<String> getAvailableContent() {
         ArrayList<String> results = new ArrayList<>();
         try {

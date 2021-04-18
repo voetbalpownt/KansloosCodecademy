@@ -14,7 +14,7 @@ public abstract class Database {
         this.resultSet = null;
     }
 
-    // Establish connection to database
+    // Establish connection to database through the JDBC driver
     public void connectDatabase() throws Exception {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");

@@ -9,7 +9,7 @@ public class CourseController extends Database {
         super(connectionUrl);
     }
 
-    // get all courses
+    // Get all Courses from the database
     public ArrayList<String> getCourses() {
         ArrayList<String> results = new ArrayList<>();
         try {
@@ -26,7 +26,7 @@ public class CourseController extends Database {
         return results;
     }
 
-    // check for duplicate coursenames
+    // Check for duplicate CourseNames
     public boolean checkDuplicate(String courseName) {
         try {
             connectDatabase();
@@ -42,27 +42,27 @@ public class CourseController extends Database {
         return false;
     }
 
-    // add a new course 
+    // Add a new Course to the database
     public void addCourse(String courseName, String subject, String difficulty, String introductionText)
             throws SQLException {
         String query = "INSERT INTO Course(CourseName, Subject, Difficulty, IntroductionText) VALUES (\'" + courseName + "\',\'" + subject + "\',\'" + difficulty + "\',\'" + introductionText + "\')";
         statement.executeUpdate(query);
     }
 
-    // add progress from student
+    // Add Progress to a Student by email and id
     public void addProgress(String emailaddress, int id) throws SQLException {
         int progress = 0;
         String query = "INSERT INTO Progress(StudentEmailAddress, ContentItemId, ProgressPercentage) VALUES (\'" + emailaddress + "\',\'" + id + "\',\'" + progress + "\')";
         statement.executeUpdate(query);
     }
 
-    // edit student progress 
+    // Edit a Student's Progress in the database
     public void editProgress(String emailaddress, int id, double progress) throws SQLException {
         String query = "UPDATE Progress SET ProgressPercentage = \'" + progress + "\' WHERE StudentEmailAddress = \'"+ emailaddress + "\' AND ContentItemId = \'" + id + "\'";
         statement.executeUpdate(query);
     }
 
-    // get interesting courses by coursename
+    // Get all of the Interesting Courses by CourseName
     public ArrayList<String> getInterestingCourses(String selected) {
         ArrayList<String> results = new ArrayList<>();
         try {
@@ -80,9 +80,7 @@ public class CourseController extends Database {
         return results;
     }
 
-
-
-    // get all content by course
+    // Get all Module/Webcast Titles from a Course
     public ArrayList<String> getContent(String course) {
         ArrayList<String> results = new ArrayList<>();
         try {
@@ -105,26 +103,23 @@ public class CourseController extends Database {
         return results;
     }
 
-        // get progress by studentemail
-        public Double getProgress(int id, String email) {
-            try {
-                connectDatabase();
-    
-                String SQL = "SELECT ProgressPercentage FROM Progress WHERE StudentEmailAddress = \'" + email + "\' AND ContentItemId = \'" + id + "\'";
-                statement = connection.createStatement();
-                resultSet = statement.executeQuery(SQL);
-                while (resultSet.next()) {
-                    return resultSet.getDouble("ProgressPercentage");
-                }
-            } catch (Exception e) {
-                System.out.println("ERROR:\n\n" + e);
+    // Get a Student's Progess by email and id
+    public Double getProgress(int id, String email) {
+        try {
+            connectDatabase();
+            String SQL = "SELECT ProgressPercentage FROM Progress WHERE StudentEmailAddress = \'" + email + "\' AND ContentItemId = \'" + id + "\'";
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(SQL);
+            while (resultSet.next()) {
+                return resultSet.getDouble("ProgressPercentage");
             }
-            return 0.0;
+        } catch (Exception e) {
+            System.out.println("ERROR:\n\n" + e);
         }
+        return 0.0;
+    }
 
-
-
-    // get average progress by id
+    // Get the average Progess by id
     public ArrayList<Double> getAverageProgress(ArrayList<Integer> ids) {
         ArrayList<Double> progress = new ArrayList<>();
         try {
@@ -143,7 +138,7 @@ public class CourseController extends Database {
         return progress;
     }
 
-    // get contentid from module/webcast
+    // Get the ContentItemId from Module/Webcast
     public Integer getContentId(String title, String type) {
         try {
             connectDatabase();
@@ -168,26 +163,26 @@ public class CourseController extends Database {
         return -1;
     }
 
-        // get all contentids  by course
-        public ArrayList<Integer> getContentIds(String course) {
-            ArrayList<Integer> ids = new ArrayList<>();
-            try {
-                connectDatabase();
-                String SQL = "SELECT ContentItemId FROM Module WHERE ContentItemId IN(SELECT ContentItemId FROM Content WHERE CourseName = \'" + course + "\')";
-                statement = connection.createStatement();
-                resultSet = statement.executeQuery(SQL);
-                while (resultSet.next()) {
-                    ids.add(resultSet.getInt("ContentItemId"));
-                }
-                SQL = "SELECT ContentItemId FROM Webcast WHERE ContentItemId IN(SELECT ContentItemId FROM Content WHERE CourseName = \'"+ course + "\')";
-                statement = connection.createStatement();
-                resultSet = statement.executeQuery(SQL);
-                while (resultSet.next()) {
-                    ids.add(resultSet.getInt("ContentItemId"));
-                }
-            } catch (Exception e) {
-                System.out.println("ERROR:\n\n" + e);
+    // Get all ContentIds from a Course
+    public ArrayList<Integer> getContentIds(String course) {
+        ArrayList<Integer> ids = new ArrayList<>();
+        try {
+            connectDatabase();
+            String SQL = "SELECT ContentItemId FROM Module WHERE ContentItemId IN(SELECT ContentItemId FROM Content WHERE CourseName = \'" + course + "\')";
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(SQL);
+            while (resultSet.next()) {
+                ids.add(resultSet.getInt("ContentItemId"));
             }
-            return ids;
+            SQL = "SELECT ContentItemId FROM Webcast WHERE ContentItemId IN(SELECT ContentItemId FROM Content WHERE CourseName = \'"+ course + "\')";
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(SQL);
+            while (resultSet.next()) {
+                ids.add(resultSet.getInt("ContentItemId"));
+            }
+        } catch (Exception e) {
+            System.out.println("ERROR:\n\n" + e);
         }
+        return ids;
+    }
 }
